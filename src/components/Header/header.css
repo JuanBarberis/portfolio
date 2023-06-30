@@ -1,0 +1,32 @@
+.nav-header{
+    width: 100%;
+    min-height: 8vh;
+    background-color: #768393;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.a-link{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 4px;
+    padding: 4px;
+}
+.a-link:active,:focus{
+    color: #fdb82f;
+    border-bottom:1px solid #fdb82f;
+    padding: 4px;
+}
+.a-link:hover{
+    color: #fdb82f;
+    border-bottom:1px solid #fdb82f;
+    padding: 4px;
+}
+
+.nav-title {
+    color: white;
+    font-weight: 400;
+}
