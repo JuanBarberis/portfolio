@@ -1,32 +1,48 @@
 .nav-header{
     width: 100%;
     min-height: 8vh;
-    background-color: #768393;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #34344e8e;
+
 }
 
-.a-link{
+.link{
     color: white;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    margin: 4px;
-    padding: 4px;
+    padding: 8px;
 }
-.a-link:active,:focus{
+.nav-header .nav-link .link:active,:focus{
     color: #fdb82f;
     border-bottom:1px solid #fdb82f;
-    padding: 4px;
+    padding: 8px;
 }
-.a-link:hover{
+.nav-header .nav-link .link:hover{
     color: #fdb82f;
     border-bottom:1px solid #fdb82f;
-    padding: 4px;
+    padding: 8px;
 }
 
 .nav-title {
     color: white;
     font-weight: 400;
+}
+.menuhamburguesa{
+    color:white;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width:768px) {
+    .nav-link{
+        display: none;
+    }
+}
+@media (min-width:767px) {
+    .menuhamburguesa{
+        display: none;
+    }
 }
