@@ -8,13 +8,11 @@ export default function MenuHamb({ handleRender }) {
         <>
             <nav className='nav-container'>
                 <CgClose onClick={handleRender} className='close-menu' />
-                <div className="profile">
-                    <div className="a-links">
-                        <a href='#inicio' className='menu-hamb'>Inicio</a>
-                        <a href='#habilidades' className='menu-hamb'>Habilidades</a>
-                        <a href='#proyectos' className='menu-hamb'>Proyectos</a>
-                        <a href='#contacto' className='menu-hamb'>Contacto</a>
-                    </div>
+                <div className='profile'>
+                    <a className='link' href='#inicio' >Inicio</a>
+                    <a className='link' href='#habilidades' >Habilidades</a>
+                    <a className='link' href='#proyectos' >Proyectos</a>
+                    <a className='link' href='#contacto' >Contacto</a>
                 </div>
             </nav >
         </>

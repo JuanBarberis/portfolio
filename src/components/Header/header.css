@@ -1,6 +1,6 @@
 .nav-header{
     width: 100%;
-    min-height: 8vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,8 +22,6 @@
 }
 .nav-header .nav-link .link:hover{
     color: #fdb82f;
-    border-bottom:1px solid #fdb82f;
-    padding: 8px;
 }
 
 .nav-title {

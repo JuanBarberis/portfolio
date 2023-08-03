@@ -1,0 +1,28 @@
+.footer{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-footer{
+    display: flex;
+    gap: 10%;
+}
+.footer-link{
+    text-decoration: none;
+    font-size: larger;
+    color: grey;
+}
+
+.footer-icon{
+    width: 25px;
+    height: 25px;
+}
