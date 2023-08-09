@@ -9,10 +9,10 @@ function Footer() {
         <div className='footer'>
             <h1>JUAN BARBERIS</h1>
             <div className='nav-footer'>
-                <a className='footer-link' href='#inicio' >Inicio</a>
-                <a className='footer-link' href='#habilidades' >Habilidades</a>
-                <a className='footer-link' href='#proyectos' >Proyectos</a>
-                <a className='footer-link' href='#contacto' >Contacto</a>
+                <Anchor className='footer-link' to={'#inicio'} >Inicio</Anchor>
+                <Anchor className='footer-link' to={'#habilidades'} >Habilidades</Anchor>
+                <Anchor className='footer-link' to={'#proyectos'} >Proyectos</Anchor>
+                <Anchor className='footer-link' to={'#contacto'} >Contacto</Anchor>
             </div>
             <div className='icon-footer'>
                 <img className='footer-icon' src={linkedin} alt='linkedin' />
