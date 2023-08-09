@@ -1,8 +1,13 @@
 .div-home {
+    width: 100%;
+    min-height: 100vh;
     background-color: rgb(18, 20, 51);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 
 }
 
@@ -14,11 +19,13 @@
 }
 
 .img-portada {
-    width: 30rem;
-    height: 30rem;
+    width: 60%;
+    height: 60% ;
+    position: static;
 }
 
 .div-portada {
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +38,17 @@
     text-align: center;
     color: rgb(243, 242, 253);
     font-weight: 300;
-    font-size: 40px;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.title-name {
+    text-align: center;
+    color: rgba(238, 238, 63, 0.74);
+    font-size: 60px;
+    font-weight: 300;
 }
 
 .home-p {
@@ -39,6 +56,12 @@
     text-align: center;
     color: rgb(243, 242, 253);
     font-weight: 100;
-    font-size: 25px;
-
+    font-size: 38px;
+}
+.home-parraf{
+    font-family: 'Gill Sans MT';
+    text-align: center;
+    color: rgba(243, 242, 253, 0.658);
+    font-weight: lighter;
+    font-size: 20px;
 }

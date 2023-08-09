@@ -10,41 +10,59 @@ import node from '../../images/node.png'
 import mongo from '../../images/mongodb.png'
 
 function Skills() {
- const data =[
-  {
-  name: 'HTML',
-  img:{html}
-},
-  {
-  name: 'CSS',
-  img:{css}
-},
-  {
-  name: 'JAVASCRIPT',
-  img:{javascript}
-},
-  {
-  name: 'GIT',
-  img:{git}
-},
-  {
-  name: 'GIT-HUB',
-  img:{github}
-},
-  {
-  name: 'NODE.JS',
-  img:{node}
-},
-  {
-  name: 'MongoDB',
-  img:{mongo}
-},
-]
+  const data = [
+    {
+      name: 'HTML',
+      image: html
+    },
+    {
+      name: 'CSS',
+      image: css
+    },
+    {
+      name: 'JAVASCRIPT',
+      image: javascript
+    },
+    {
+      name: 'REACT',
+      image: react
+    },
+    {
+      name: 'GIT',
+      image: git
+    },
+    {
+      name: 'GIT-HUB',
+      image: github
+    },
+    {
+      name: 'NODE.JS',
+      image: node
+    },
+    {
+      name: 'MongoDB',
+      image: mongo
+    },
+  ]
 
   return (
     <>
-      <h1>soy las habilidades</h1>
-      <div>Skills</div>
+      <div className='skill'>
+        <h1 className='skill-h1'>HABILIDADES</h1>
+        <div className='skill-title'>
+          {
+            data.map((item, i) => {
+              return (
+                <div className='skills'>
+                  <img className='skill-img' src={item.image} alt={item.name} />
+                  <h2 className='skill-h2'>{item.name}</h2>
+                </div>
+              )
+            })
+          }
+        </div>
+
+      </div>
     </>
   )
 }
