@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FiMenu } from "react-icons/fi";
 import './header.css'
 import MenuHamb from '../MenuHamburguesa/MenuHamb';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Header() {
@@ -13,14 +14,14 @@ export default function Header() {
     return (
         <div className='nav-header'>
             <h2 className='nav-title'>JUAN BARBERIS </h2>
-           <FiMenu onClick={handleRender} className='menuhamburguesa'/>
+            <FiMenu onClick={handleRender} className='menuhamburguesa' />
             {render ? <MenuHamb handleRender={handleRender} /> : ""}
 
             <div className='nav-link'>
-                <a className='link'href='#inicio' >Inicio</a>
-                <a className='link'href='#habilidades' >Habilidades</a>
-                <a className='link'href='#proyectos' >Proyectos</a>
-                <a className='link'href='#contacto' >Contacto</a>
+                <NavLink to={'/home'} className='link' >Inicio</NavLink>
+                <NavLink to={'/skills'} className='link'  >Habilidades</NavLink>
+                <NavLink to={'/proyects'} className='link'  >Proyectos</NavLink>
+                <NavLink to={'/contact'} className='link'  >Contacto</NavLink>
             </div>
         </div>
     )

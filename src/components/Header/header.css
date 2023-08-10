@@ -7,29 +7,35 @@
     background-color: #34344e5a;
     position: fixed;
 }
+.nav-link{
+    display: flex;
+    gap: 15px;
 
+}
 .link{
-    color: white;
+    color: rgba(243, 242, 253, 0.842);
+    font-size: 25px;
+    font-weight: 200;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    padding: 8px;
 }
-.nav-header .nav-link .link:active,:focus{
-    color: #fdb82f;
-    border-bottom:1px solid #fdb82f;
-    padding: 8px;
+.nav-header .nav-link .link:focus{
+    color: rgba(238, 238, 63, 0.74);
+    border-bottom:1px solid rgba(238, 238, 63, 0.74);
+
 }
 .nav-header .nav-link .link:hover{
-    color: #fdb82f;
+    color: rgba(238, 238, 63, 0.74);
 }
 
 .nav-title {
-    color: white;
+    color:  rgba(243, 242, 253, 0.658);
+    font-family: 'Gill Sans MT';
     font-weight: 400;
 }
 .menuhamburguesa{
-    color:white;
+    color: rgba(243, 242, 253, 0.658);
     width: 20px;
     height: 20px;
 }

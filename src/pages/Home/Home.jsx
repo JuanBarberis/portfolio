@@ -21,7 +21,7 @@ function Home() {
                         <span
                             style={{ color: 'rgba(238, 238, 63, 0.74)' }}>
                             <Typewriter
-                                words={['de aplicaciones web', '& aplicaciones móviles']}
+                                words={['de aplicaciones web', '& móviles']}
                                 loop={0}
                                 cursor
                                 cursorStyle='_'

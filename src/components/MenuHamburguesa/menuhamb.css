@@ -4,8 +4,8 @@
     background: #3a415a;
     margin-right: 5px;
     border-radius: 8px;
-    height: 50vh;
-    width: 50%;
+    height: 40vh;
+
     position: absolute;
     right: 0;
     top: 0;
@@ -24,19 +24,15 @@
 }
 
 .profile {
+    
     display: flex;
     flex-direction: column;
     padding: 1.4rem;
-    gap: 8px;
+    gap: 15px;
     margin-top: 20%;
 }
 
-.nav-container .profile .link:active,:focus{
-    color: #fdb82f;
-    border-bottom:1px solid #fdb82f;
-    padding: 8px;
-}
 .nav-container .profile .link:hover{
-    color: #fdb82f;
-}
+    color: rgba(238, 238, 63, 0.74);
+} 
 
