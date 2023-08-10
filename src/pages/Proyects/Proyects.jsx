@@ -1,7 +1,11 @@
 import React from 'react'
+import './proyects.css'
 import amazing from '../../images/amazingevents.jpg'
 import matear from '../../images/matear.jpg'
 import minga from '../../images/minga.jpg'
+import { NavLink } from 'react-router-dom'
+import { AiOutlineEye } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 
 function Proyects() {
   const data = [
@@ -30,27 +34,30 @@ function Proyects() {
 
   return (
     <>
-      <div>
-        {
-          data.map((item) => {
-            return (
-              <div>
-                <div>
-                  <img src={item.imagen} alt="" />
-                  <div>
-                    <h3>{item.name}</h3>
-                    <p>{item.tecnologia}</p>
+      <div className='div-proyect'>
+        <h1 className='h1-title'>PROYECTOS</h1>
+        <div className='div-text'>
+          {
+            data.map((item) => {
+              return (
+                <div className='div-card'>
+                  <div className='div-conteiner'>
+                    <img className='img-proyect' src={item.imagen} alt={item.name} />
+                    <div >
+                      <h3 className='title-proyect'>{item.name}</h3>
+                      <p className='parraf-proyect'>{item.tecnologia}</p>
+                    </div>
+                  </div>
+                  <div className='div-button'>
+                    <NavLink to={item.proyecto} className='button-demo'><AiOutlineEye/>Demo</NavLink>
+                    <NavLink to={item.github} className='button-repo'><AiFillGithub/> Repo</NavLink >
                   </div>
                 </div>
-                <div>
-                  <button>demo</button>
-                  <button>repo</button>
-                </div>
-              </div>
 
-            )
-          })
-        }
+              )
+            })
+          }
+        </div>
 
       </div>
     </>

@@ -1,0 +1,113 @@
+.div-proyect{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(18, 20, 51);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 20px;
+}
+.div-text{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 10px;
+}
+.h1-title{
+    color: rgb(231, 231, 254);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+.div-card{
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    box-shadow: 3px 4px 1px rgba(218, 218, 82, 0.137);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px; 
+}
+.div-conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title-proyect{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+.parraf-proyect{
+    color: rgba(238, 238, 63, 0.74);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Gill Sans MT';
+
+}
+
+.img-proyect{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+.div-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+.div-card .div-button .button-demo{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgba(238, 238, 63, 0.74);
+    background-color: rgb(18, 20, 51);
+    border: 1px solid rgba(238, 238, 63, 0.74);
+    padding: 1px 15px;
+}
+
+.div-card .div-button .button-repo{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgb(18, 20, 51);
+    background-color: rgba(238, 238, 63, 0.74);
+    border: 1px solid rgba(238, 238, 63, 0.74);
+    padding: 1px 15px;
+
+}
+
+.div-card .div-button .button-repo:hover{
+    background-color:rgba(126, 127, 140, 0.442);
+    color: rgba(238, 238, 63, 0.74);
+}
+.div-card .div-button .button-demo:hover{
+    background-color:rgba(250, 250, 171, 0.366);
+    color:rgb(18, 20, 51);
+}
+
+@media only screen and (max-width: 768px) {
+    .div-text{
+        flex-direction: column;
+    }
+}
