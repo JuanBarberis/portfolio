@@ -1,18 +1,21 @@
-.nav-header{
+.nav-header {
     width: 100%;
     min-height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: #34344e5a;
+    justify-content: space-between;
+    background-color: #34344e69;
     position: fixed;
 }
-.nav-link{
+
+.nav-link {
     display: flex;
     gap: 15px;
+    margin-right: 20px;
 
 }
-.link{
+
+.link {
     color: rgba(243, 242, 253, 0.842);
     font-size: 25px;
     font-weight: 200;
@@ -20,33 +23,44 @@
     text-align: center;
     text-transform: uppercase;
 }
-.nav-header .nav-link .link:focus{
-    color: rgba(238, 238, 63, 0.74);
-    border-bottom:1px solid rgba(238, 238, 63, 0.74);
 
+.nav-link .active {
+    color: rgba(238, 238, 63, 0.74);
+    border-bottom: 1px solid rgba(238, 238, 63, 0.74);
 }
-.nav-header .nav-link .link:hover{
+
+/* .nav-header .nav-link .link:focus {
+    color: rgba(238, 238, 63, 0.74);
+    border-bottom: 1px solid rgba(238, 238, 63, 0.74);
+
+} */
+
+.nav-header .nav-link .link:hover {
     color: rgba(238, 238, 63, 0.74);
 }
 
 .nav-title {
-    color:  rgba(243, 242, 253, 0.658);
+    color: rgba(243, 242, 253, 0.658);
     font-family: 'Gill Sans MT';
     font-weight: 400;
+    margin-left: 20px;
 }
-.menuhamburguesa{
+
+.menuhamburguesa {
     color: rgba(243, 242, 253, 0.658);
     width: 20px;
     height: 20px;
+    margin-right: 20px;
 }
 
 @media (max-width:768px) {
-    .nav-link{
+    .nav-link {
         display: none;
     }
 }
+
 @media (min-width:769px) {
-    .menuhamburguesa{
+    .menuhamburguesa {
         display: none;
     }
 }

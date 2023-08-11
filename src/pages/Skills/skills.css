@@ -1,10 +1,11 @@
 .skill {
     width: 100%;
-    min-height: 70vh;
+    min-height: 90vh;
     background-color: rgb(18, 20, 51);
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     text-align: center;
+    gap: 1rem;
 
 }
 
@@ -23,16 +24,12 @@
     gap: 5rem;
     justify-content: center;
     align-self: center;
-    margin-top: 4rem;
 
 
 }
 
 .skills:hover {
     filter: saturate(1);
-    background-color: rgba(218, 218, 82, 0.137);
-    border: 1px solid rgba(255, 255, 255, 0.521);
-    border-radius: 8px;
 }
 
 .skills {

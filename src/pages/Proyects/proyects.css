@@ -1,11 +1,10 @@
 .div-proyect{
     width: 100%;
-    min-height: 80vh;
+    min-height: 90vh;
     background-color: rgb(18, 20, 51);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-top: 20px;
+    gap: 1rem;
 }
 .div-text{
     width: 100%;
@@ -14,6 +13,7 @@
     flex-direction: row;
     gap: 2rem;
     padding: 10px;
+    
 }
 .h1-title{
     color: rgb(231, 231, 254);
@@ -23,7 +23,7 @@
 }
 .div-card{
     border: 1px solid rgba(255, 255, 255, 0.19);
-    box-shadow: 3px 4px 1px rgba(218, 218, 82, 0.137);
+    box-shadow: 2px 3px 4px rgba(181, 181, 181, 0.856);
     width: 100%;
     height: 60%;
     display: flex;
@@ -31,6 +31,7 @@
     align-items: center;
     gap: 1rem;
     border-radius: 10px; 
+    /* background-color: rgba(255, 255, 255, 0.962); */
 }
 .div-conteiner{
     display: flex;
@@ -39,10 +40,10 @@
 }
 
 .title-proyect{
-    color: white;
+    color: rgb(173, 173, 173);
     text-align: center;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 400;
 }
 .parraf-proyect{
     color: rgba(238, 238, 63, 0.74);

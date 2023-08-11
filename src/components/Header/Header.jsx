@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import './header.css'
 import MenuHamb from '../MenuHamburguesa/MenuHamb';
 import { NavLink } from 'react-router-dom';
-
+import { Link } from 'react-scroll';
 
 export default function Header() {
     const [render, setRender] = useState(false);
@@ -18,10 +18,10 @@ export default function Header() {
             {render ? <MenuHamb handleRender={handleRender} /> : ""}
 
             <div className='nav-link'>
-                <NavLink to={'/home'} className='link' >Inicio</NavLink>
-                <NavLink to={'/skills'} className='link'  >Habilidades</NavLink>
-                <NavLink to={'/proyects'} className='link'  >Proyectos</NavLink>
-                <NavLink to={'/contact'} className='link'  >Contacto</NavLink>
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={800} className='link' >Inicio</Link>
+                <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Habilidades</Link>
+                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Proyectos</Link>
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Contacto</Link>
             </div>
         </div>
     )

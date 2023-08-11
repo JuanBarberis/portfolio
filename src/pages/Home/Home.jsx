@@ -9,7 +9,7 @@ function Home() {
 
     return (
         <>
-            <div className='div-home'>
+            <div className='div-home' id='home'>
                 <div className='div-imgportada'>
                     <img className='img-portada' src={imgPortada} alt='img-portada' />
                 </div>

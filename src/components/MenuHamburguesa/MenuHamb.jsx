@@ -1,7 +1,7 @@
 import React from 'react'
 import './menuhamb.css'
 import { CgClose } from "react-icons/cg";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export default function MenuHamb({ handleRender }) {
 
@@ -10,10 +10,10 @@ export default function MenuHamb({ handleRender }) {
             <nav className='nav-container'>
                 <CgClose onClick={handleRender} className='close-menu' />
                 <div className='profile'>
-                    <NavLink to={'/home'} className='link' >Inicio</NavLink>
-                    <NavLink to={'/skills'} className='link'  >Habilidades</NavLink>
-                    <NavLink to={'/proyects'} className='link'  >Proyectos</NavLink>
-                    <NavLink to={'/contact'} className='link'  >Contacto</NavLink>
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={800} className='link' >Inicio</Link>
+                <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Habilidades</Link>
+                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Proyectos</Link>
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Contacto</Link>
                 </div>
             </nav >
         </>
