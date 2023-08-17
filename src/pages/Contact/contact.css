@@ -1,6 +1,6 @@
 #contact {
     background-color: rgb(18, 20, 51);
-    min-height: 80vh;
+    min-height: 70vh;
     width: 100%;
 }
 
@@ -83,4 +83,11 @@
 .button-form:hover{
     color: rgb(231, 231, 254);
  
+}
+
+@media (min-width:320px) and (max-width: 940px) {
+    .contact-title{
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
 }

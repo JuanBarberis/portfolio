@@ -1,6 +1,6 @@
 .div-proyect{
     width: 100%;
-    min-height: 90vh;
+    min-height: 70vh;
     background-color: rgb(18, 20, 51);
     display: flex;
     flex-direction: column;
@@ -107,8 +107,15 @@
     color:rgb(18, 20, 51);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 808px) {
     .div-text{
         flex-direction: column;
+    }
+}
+
+@media (min-width:320px) and (max-width: 940px) {
+    .h1-title{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }

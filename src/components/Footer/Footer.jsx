@@ -1,23 +1,26 @@
 import React from 'react'
-import { Link as Anchor } from 'react-router-dom'
-import linkedin from '../../images/linkedin.png'
-import gmail from '../../images/gmail.png'
-import github from '../../images/github.png'
 import './footer.css'
+import { Link } from 'react-scroll'
+import { AiFillGithub } from 'react-icons/ai';
+import { BiLogoGmail } from 'react-icons/bi';
+import { BsLinkedin } from 'react-icons/bs';
+import { NavLink, useNavigation } from 'react-router-dom';
+
 function Footer() {
+    const navigate = useNavigation()
     return (
         <div className='footer'>
-            <h1>JUAN BARBERIS</h1>
+            <h1 className='title-footer'>JUAN BARBERIS</h1>
             <div className='nav-footer'>
-                <Anchor className='footer-link' to={'#inicio'} >Inicio</Anchor>
-                <Anchor className='footer-link' to={'#habilidades'} >Habilidades</Anchor>
-                <Anchor className='footer-link' to={'#proyectos'} >Proyectos</Anchor>
-                <Anchor className='footer-link' to={'#contacto'} >Contacto</Anchor>
+                <Link to="home" spy={true} smooth={true} offset={-100} duration={800} className='link-footer' >Inicio</Link>
+                <Link to="skill" spy={true} smooth={true} offset={-100} duration={800} className='link-footer'  >Habilidades</Link>
+                <Link to="proyect" spy={true} smooth={true} offset={-100} duration={800} className='link-footer'  >Proyectos</Link>
+                <Link to="contact" spy={true} smooth={true} offset={-100} duration={800} className='link-footer'  >Contacto</Link>
             </div>
             <div className='icon-footer'>
-                <img className='footer-icon' src={linkedin} alt='linkedin' />
-                <img className='footer-icon' src={github} alt='github' />
-                <img className='footer-icon' src={gmail} alt='gmail' />
+                <NavLink to={'https://github.com/JuanBarberis'}><AiFillGithub className='icon-github' /></NavLink>
+                <NavLink to={'https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTtTcPQMfbNjSCXPKgnPKBjmfqdGvGVdvvKGWZBrbmBtWsPHtMMKlPLFxdhhvQVsBTwHJD'}><BiLogoGmail className='icon-github' /></NavLink>
+                <NavLink to={'https://www.linkedin.com/in/juancruzbarberis/'}><BsLinkedin className='icon-github' /></NavLink>
             </div>
             <h3 className='footer-copy'>Copyright © | Juan Barberis</h3>
         </div>
