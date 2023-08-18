@@ -9,6 +9,10 @@
 
 }
 
+
+
+
+
 .skill-h1 {
     color: rgb(231, 231, 254);
     text-align: center;
@@ -24,12 +28,11 @@
     gap: 5rem;
     justify-content: center;
     align-self: center;
-
-
 }
 
 .skills:hover {
     filter: saturate(1);
+    
 }
 
 .skills {
@@ -40,12 +43,14 @@
     justify-content: center;
     gap: 10px;
     filter: grayscale(100%);
-    padding-block: 10px;
+    /* padding-block: 10px; */
 }
+
 .skill-img {
     width: 80px;
     height: 80px;
 }
+
 .skill-h2 {
     text-align: center;
     color: rgb(231, 231, 254);
@@ -54,10 +59,11 @@
 }
 
 @media (min-width:320px) and (max-width: 940px) {
-    .skill{
+    .skill {
         padding-top: 5rem;
     }
-    .skill-h1{
+
+    .skill-h1 {
         padding-bottom: 1rem;
     }
 }

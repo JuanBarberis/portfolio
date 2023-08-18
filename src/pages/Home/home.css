@@ -64,6 +64,26 @@
     font-weight: lighter;
     font-size: 20px;
 }
+.download-cv{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Gill Sans MT';
+    border-radius: 10px;
+    color: rgb(18, 20, 51);
+    background-color: rgba(238, 238, 63, 0.74);
+    border: 1px solid rgba(238, 238, 63, 0.74);
+    padding: 1px 15px;
+}
+.download-cv:hover{
+    background-color:rgba(126, 127, 140, 0.442);
+    color: rgba(238, 238, 63, 0.74);
+}
 
 @media only screen and (max-width: 1160px) {
     .home-title{

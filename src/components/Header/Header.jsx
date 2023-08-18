@@ -7,12 +7,24 @@ import { Link } from 'react-scroll';
 
 export default function Header() {
     const [render, setRender] = useState(false);
+    const [navbar, setNavnar] = useState(false)
 
-    function handleRender() {
+    const handleRender = () => {
         setRender(!render)
     }
+
+    const changeBackground = ()=>{
+        if(window.scrollY >= 100){
+            setNavnar(true)
+        }else{
+            setNavnar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+
     return (
-        <div className='nav-header'>
+        <div className={navbar ? 'navbar active' : 'navbar'}>
             <h2 className='nav-title'>JUAN BARBERIS </h2>
             <FiMenu onClick={handleRender} className='menuhamburguesa' />
             {render ? <MenuHamb handleRender={handleRender} /> : ""}

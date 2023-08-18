@@ -1,11 +1,18 @@
-.nav-header {
+.navbar {
     width: 100%;
     min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #34344e69;
+    /* background-color: #34344e69; */
+    background-color: transparent;
     position: fixed;
+    z-index: 1;
+}
+
+.navbar.active {
+    background-color: rgb(30, 32, 56);
+
 }
 
 .nav-link {
@@ -29,14 +36,10 @@
     border-bottom: 1px solid rgba(238, 238, 63, 0.74);
 }
 
-/* .nav-header .nav-link .link:focus {
-    color: rgba(238, 238, 63, 0.74);
-    border-bottom: 1px solid rgba(238, 238, 63, 0.74);
 
-} */
-
-.nav-header .nav-link .link:hover {
+.link:hover {
     color: rgba(238, 238, 63, 0.74);
+
 }
 
 .nav-title {
