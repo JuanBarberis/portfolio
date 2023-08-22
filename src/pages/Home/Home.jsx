@@ -33,7 +33,7 @@ function Home() {
                         </span>
                     </p>
                     <p className='home-parraf'>
-                        Full-Stack Developer de aplicaciones Web & Móviles <br />
+                        Full-Stack Developer de aplicaciones Web & Mobile Apps <br />
                         poseo conocimientos técnicos en front-end y back-end.
                     </p>
                     <NavLink to={'https://drive.google.com/file/d/1DrGJloIEOig1i8p_VWF4j1dStl3k-kK3/view'} className='download-cv'> Descargar CV <BiDownload /></NavLink >

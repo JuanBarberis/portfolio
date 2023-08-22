@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './proyects.css'
 import amazing from '../../images/amazingevents.jpg'
 import matear from '../../images/matear.jpg'
@@ -8,6 +8,7 @@ import { AiOutlineEye } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 
 function Proyects() {
+  const [card, setCard] = useState(false)
   const data = [
     {
       name: 'Amazing Events',
@@ -32,6 +33,16 @@ function Proyects() {
     },
   ]
 
+  const effectCard = () => {
+    if(window.scrollY >= 850){
+      setCard(true)
+    } else{
+      setCard(false)
+    }
+  }
+
+  window.addEventListener('scroll', effectCard)
+
   return (
     <>
       <div className='div-proyect' id='proyect'>
@@ -40,7 +51,7 @@ function Proyects() {
           {
             data.map((item) => {
               return (
-                <div className='div-card'>
+                <div className={card ? 'card active' : 'card'}>
                   <div className='div-conteiner'>
                     <img className='img-proyect' src={item.imagen} alt={item.name} />
                     <div >
@@ -49,8 +60,8 @@ function Proyects() {
                     </div>
                   </div>
                   <div className='div-button'>
-                    <NavLink to={item.proyecto} className='button-demo'><AiOutlineEye/>Demo</NavLink>
-                    <NavLink to={item.github} className='button-repo'><AiFillGithub/> Repo</NavLink >
+                    <NavLink to={item.proyecto} className='button-demo'><AiOutlineEye />Demo</NavLink>
+                    <NavLink to={item.github} className='button-repo'><AiFillGithub /> Repo</NavLink >
                   </div>
                 </div>
 

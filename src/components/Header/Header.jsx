@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FiMenu } from "react-icons/fi";
 import './header.css'
 import MenuHamb from '../MenuHamburguesa/MenuHamb';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 export default function Header() {

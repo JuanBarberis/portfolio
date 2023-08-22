@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './skills.css'
 import html from '../../images/html.png'
 import css from '../../images/css.png'
@@ -10,6 +10,9 @@ import node from '../../images/node.png'
 import mongo from '../../images/mongodb.png'
 
 function Skills() {
+  const [cards, setCards] = useState(false)
+
+
   const data = [
     {
       name: 'HTML',
@@ -45,11 +48,21 @@ function Skills() {
     },
   ]
 
+  const effectCard = () => {
+    if(window.scrollY >= 100){
+      setCards(true)
+    } else{
+      setCards(false)
+    }
+  }
+
+  window.addEventListener('scroll', effectCard)
+
   return (
     <>
       <div className='skill ' id='skill'>
         <h1 className='skill-h1'>HABILIDADES</h1>
-        <div className='skill-title'>
+        <div className={cards ? 'cards active' : 'cards'}>
           {
             data.map((item, i) => {
               return (

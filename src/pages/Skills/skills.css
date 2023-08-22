@@ -9,10 +9,6 @@
 
 }
 
-
-
-
-
 .skill-h1 {
     color: rgb(231, 231, 254);
     text-align: center;
@@ -20,19 +16,34 @@
     font-weight: 200;
 }
 
-.skill-title {
+.cards {  
+    display: flex;
     width: 70%;
     height: 100%;
-    display: flex;
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
     align-self: center;
+    margin-top: 2rem;
+    opacity: 0;
+}
+.cards.active{
+    animation: mov-box 2s 1;
+    animation-delay: 0s;
+    opacity: 1;
+
+}
+@keyframes mov-box{
+    0%{
+        transform: translateY(40%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .skills:hover {
     filter: saturate(1);
-    
 }
 
 .skills {
@@ -43,7 +54,7 @@
     justify-content: center;
     gap: 10px;
     filter: grayscale(100%);
-    /* padding-block: 10px; */
+
 }
 
 .skill-img {
