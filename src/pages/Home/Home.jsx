@@ -2,6 +2,7 @@ import React from 'react'
 
 import './home.css'
 import imgPortada from '../../images/portada.png'
+import fondo from '../../images/fondo.png'
 import { Typewriter } from 'react-simple-typewriter'
 import { BiDownload } from 'react-icons/bi';
 import { NavLink } from 'react-router-dom';
@@ -13,7 +14,7 @@ function Home() {
         <>
             <div className='div-home' id='home'>
                 <div className='div-imgportada'>
-                    <img className='img-portada' src={imgPortada} alt='img-portada' />
+                    <img className='img-portada' src={fondo} alt='img-portada' />
                 </div>
                 <div className='div-portada'>
                     <h1 className='home-title'>Hola ! Soy

@@ -103,7 +103,10 @@
 
 @media (min-width:320px) and (max-width: 940px) {
     .contact-title{
-        padding-top: 10px;
         margin-bottom: 10px;
+    }
+    #contact{
+        padding-top: 10%;
+        padding-bottom: 5px;
     }
 }

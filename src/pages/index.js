@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import IndexLayout from "../layaouts/IndexLayout/IndexLayout";
 import MainLayout from "../layaouts/MainLayout/MainLayout";
 import Home from "./Home/Home";
 import Skills from "./Skills/Skills";

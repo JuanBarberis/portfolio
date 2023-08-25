@@ -11,9 +11,9 @@ export default function MenuHamb({ handleRender }) {
                 <CgClose onClick={handleRender} className='close-menu' />
                 <div className='profile'>
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={800} className='link' >Inicio</Link>
-                <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Habilidades</Link>
-                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Proyectos</Link>
-                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Contacto</Link>
+                <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-90} duration={800} className='link'  >Habilidades</Link>
+                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-80} duration={800} className='link'  >Proyectos</Link>
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={800} className='link'  >Contacto</Link>
                 </div>
             </nav >
         </>

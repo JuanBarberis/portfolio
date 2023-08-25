@@ -29,10 +29,10 @@ export default function Header() {
             {render ? <MenuHamb handleRender={handleRender} /> : ""}
 
             <div className='nav-link'>
-                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={800} className='link' >Inicio</Link>
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-110} duration={800} className='link' >Inicio</Link>
                 <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Habilidades</Link>
-                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Proyectos</Link>
-                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={800} className='link'  >Contacto</Link>
+                <Link activeClass="active" to="proyect" spy={true} smooth={true} offset={-90} duration={800} className='link'  >Proyectos</Link>
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-80} duration={800} className='link'  >Contacto</Link>
             </div>
         </div>
     )
