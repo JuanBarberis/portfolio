@@ -38,7 +38,7 @@ function Contact() {
           <textarea className='area-form' id="msg" name="message" value={data.message} onChange={handleChange} />
           <button className='button-form' type='submit' id='submit'> Enviar</button>
 
-          <input type='hidden' name='_next' value="http://localhost:3000/" />
+          <input type='hidden' name='_next' value="https://juanbarberis.vercel.app/" />
           <input type='hidden' name='_captcha' value="false" />
         </form>
       </div>
